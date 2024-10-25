@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const Header = () => {
@@ -86,16 +86,22 @@ const Header = () => {
               </svg>
             </div>
             <div className="hidden md:flex ml-8 space-x-6">
-              <a href="#" className="text-gray-600 hover:text-gray-900">
-                Tools
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
-                Channels
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
+              <div className="flex items-center gap-1">
+                <a href="#" className="text-black hover:text-blue-900">
+                  Tools
+                </a>
+                <ChevronDown className="w-4 h-4" />
+              </div>
+              <div className="flex items-center gap-1">
+                <a href="#" className="text-black hover:text-blue-900">
+                  Channels
+                </a>{" "}
+                <ChevronDown className="w-4 h-4 " />
+              </div>
+              <a href="#" className="text-black hover:text-blue-900">
                 Pricing
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
+              <a href="#" className="text-black hover:text-blue-900">
                 Blog
               </a>
             </div>
