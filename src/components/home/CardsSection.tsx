@@ -1,6 +1,6 @@
 import { features, stats, testimonials } from "../../constantData";
 import { ArrowRight } from "lucide-react";
-
+import teamImg from "../../assets/team-map.webp";
 const CardsSection = () => {
   return (
     <div>
@@ -111,7 +111,7 @@ const CardsSection = () => {
 
           {/* Right content - Avatar network */}
           <div>
-            <img src="/src/assets/team-map.webp" alt="" />
+            <img src={teamImg} alt="" />
 
             {/* Connecting lines using border-dashed */}
             <div className="absolute inset-0">
